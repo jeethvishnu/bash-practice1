@@ -16,7 +16,7 @@ val(){
     fi
 }
 
-if [ usr -ne 0 ]
+if [ $usr -ne 0 ]
 then
     echo "is this sudo"
     exit 1
