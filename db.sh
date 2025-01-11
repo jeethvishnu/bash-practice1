@@ -1,9 +1,9 @@
-u=$(id -u)
+usr=$(id -u)
 time=$(date +%F-%H-%M-%S)
 script=$(echo $0 | cut -d "." -f1)
 log=/tmp/$script-$time.log
 
-if [ u -ne 0 ]
+if [ usr -ne 0 ]
 then
     echo "is this sudo"
     exit 1
