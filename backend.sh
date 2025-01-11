@@ -57,7 +57,7 @@ cd /app
 npm install
 val $? "installing"
 
-cp /home/ec2-user/bash-practice/backend.service /etc/systemd/system/backend.service
+cp /home/ec2-user/bash-practice1/backend.service /etc/systemd/system/backend.service
 val $? "copying"
 
 systemctl daemon-reload
