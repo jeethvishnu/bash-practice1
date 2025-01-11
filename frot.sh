@@ -5,7 +5,7 @@ timestamp=$(date +%F-%H-%M-%S)
 file=$(echo $0 | cut -d "." -f1)
 log=/tmp/$file-$timestamp.log
 
-if [ us -ne 0 ]
+if [ $us -ne 0 ]
 then
     echo "is this sudo"
     exit 1
@@ -17,6 +17,7 @@ val(){
     if [ $1 -ne 0 ]
     then
         echo "$2 failed"
+        exit 1
     else
         echo "$2 success"
     fi
