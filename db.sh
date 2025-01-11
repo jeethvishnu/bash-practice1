@@ -3,13 +3,7 @@ time=$(date +%F-%H-%M-%S)
 script=$(echo $0 | cut -d "." -f1)
 log=/tmp/$script-$time.log
 
-if [ usr -ne 0 ]
-then
-    echo "is this sudo"
-    exit 1
-else
-    echo "IN SUDO"
-fi
+
 
 val(){
     if [ $1 -ne 0 ]
@@ -20,6 +14,15 @@ val(){
         echo "$2 success"
     fi
 }
+
+if [ usr -ne 0 ]
+then
+    echo "is this sudo"
+    exit 1
+else
+    echo "IN SUDO"
+fi
+
 
 dnf install mysql-server -y
 val $? "installing"
