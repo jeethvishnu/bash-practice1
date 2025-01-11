@@ -4,7 +4,7 @@ time=$(date +%F-%H-%M-%S)
 file=$(echo $0 | cut -d "." -f1)
 log=/tmp/$file-$time.log
 
-if[ us -ne 0 ]
+if[ $us -ne 0 ]
 then
     echo "is this sudo"
     exit 1
