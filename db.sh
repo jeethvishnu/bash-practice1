@@ -1,3 +1,4 @@
+#!/bin/bash
 usr=$(id -u)
 time=$(date +%F-%H-%M-%S)
 script=$(echo $0 | cut -d "." -f1)

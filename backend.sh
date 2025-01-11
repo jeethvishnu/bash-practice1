@@ -1,3 +1,4 @@
+#!/bin/bash
 us=$(id -u)
 time=$(date +%F-%H-%M-%S)
 file=$(echo $0 | cut -d "." -f1)
