@@ -68,7 +68,7 @@ val $? "starting and enabling"
 dnf install mysql -y
 val $? "installing"
 
-mysql -h 172.31.80.124 -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -h db.vjeeth.site -uroot -pExpenseApp@1 < /app/schema/backend.sql
 val $? "schema"
 
 systemctl restart backend
