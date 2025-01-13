@@ -6,3 +6,4 @@ echo "pid status:$$"
 #./otherscript.sh
 
 echo "after calling other script:$c"
+echo "pid status:$$"
