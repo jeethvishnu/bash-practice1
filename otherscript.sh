@@ -1,2 +1,2 @@
-echo "hi there from other script"
+c="hi there from other script"
 echo "pid status:$$"
