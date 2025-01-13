@@ -4,7 +4,7 @@ echo "calling variable c before caaling other script:$c"
 echo "pid status:$$"
 
 #./otherscript.sh
-source./otherscript.sh
+source ./otherscript.sh
 
 echo "after calling other script:$c"
 echo "pid status:$$"
